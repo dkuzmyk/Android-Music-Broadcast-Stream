@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dkuzmy3.clipserver">
+
+    <permission android:name="com.dkuzmy3.clipserver.MUSIC_APP" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher">
+
+        <service
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:permission="com.dkuzmy3.clipserver.MUSIC_APP">
+            <intent-filter>
+                <action android:name="com.dkuzmy3.clipserver.musicAIDL" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

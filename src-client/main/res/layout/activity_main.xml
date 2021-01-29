@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_service"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:onClick="start_service"
+        android:text="start Service"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/stop_service"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:onClick="stop_service"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="stop     Service"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to MetalPlayer!"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the track number (1-5)"
+        android:textColor="#505050"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:id="@+id/track_num"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/Play_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/Play_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:onClick="play_func"
+        android:text="Play"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <Button
+        android:id="@+id/Stop_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:onClick="stop_func"
+        android:text="Stop"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <Button
+        android:id="@+id/Pause_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:onClick="pause_func"
+        android:text="Pause"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
